@@ -1,0 +1,444 @@
+<html>
+<head>
+    <title>好运十二月</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="run.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <input id="mov" onclick="start()" class="btn btn-primary" 
+                    type="button" value="开始" style="font-size: 150%"/>
+            </div>
+            <div class="col-md-2">
+                <input id="clr" onclick="restart()" class="btn btn-warning" 
+                    type="button" value="清空" style="font-size: 150%"/>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2 checkbox">
+                <label><input id="lucky" type="checkbox"/> 好运来</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1" "full">一月</div>
+            <div class="col-md-1" "full">二月</div>
+            <div class="col-md-1" "full">三月</div>
+            <div class="col-md-1" "full">四月</div>
+            <div class="col-md-1" "full">五月</div>
+            <div class="col-md-1" "full">六月</div>
+            <div class="col-md-1" "full">七月</div>
+            <div class="col-md-1" "full">八月</div>
+            <div class="col-md-1" "full">九月</div>
+            <div class="col-md-1" "full">十月</div>
+            <div class="col-md-1" "full">十一月</div>
+            <div class="col-md-1" "full">十二月</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="l-1" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-2" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-3" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-4" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-5" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-6" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-7" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-8" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-9" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-10" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-11" src="images/lights_off.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="l-12" src="images/lights_off.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="u-1-1" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-2" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-3" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-4" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-5" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-6" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-7" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-8" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-9" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-10" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-11" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-1-12" src="images/back.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="u-2-1" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-2" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-3" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-4" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-5" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-6" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-7" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-8" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-9" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-10" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-11" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-2-12" src="images/back.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="u-3-1" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-2" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-3" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-4" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-5" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-6" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-7" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-8" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-9" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-10" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-11" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-3-12" src="images/back.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="u-4-1" src="images/back_high.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-2" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-3" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-4" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-5" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-6" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-7" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-8" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-9" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-10" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-11" src="images/back.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="u-4-12" src="images/back.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><img class="longImage" vspace="30" 
+                src="images/divider.png"></div>
+            <div class="col-md-4"><img class="longImage" vspace="30" 
+                src="images/divider.png"></div>
+            <div class="col-md-4"><img class="longImage" vspace="30" 
+                src="images/divider.png"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="d-1-1" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-2" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-3" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-4" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-5" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-6" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-7" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-8" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-9" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-10" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-11" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-1-12" src="images/blank.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="d-2-1" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-2" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-3" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-4" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-5" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-6" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-7" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-8" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-9" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-10" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-11" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-2-12" src="images/blank.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="d-3-1" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-2" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-3" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-4" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-5" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-6" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-7" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-8" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-9" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-10" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-11" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-3-12" src="images/blank.png" class="img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1" "full">
+                <img id="d-4-1" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-2" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-3" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-4" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-5" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-6" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-7" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-8" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-9" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-10" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-11" src="images/blank.png" class="img-rounded">
+            </div>
+            <div class="col-md-1" "full">
+                <img id="d-4-12" src="images/blank.png" class="img-rounded">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function start() {
+            ur = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4];
+            uc = 1;
+            dr = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+            dc = -1;
+            curr_indx = 0;
+
+            randomize();
+            move();
+            document.getElementById("mov").onclick = function() { move(); };
+            document.getElementById("mov").value = '继续';
+        }
+
+        function restart() {
+            for (c = 1; c <= 12; c++) {
+                for (r = 1; r <= 4; r++) {
+                    var id1 = 'u-'.concat(r,'-',c);
+                    document.getElementById(id1).src = "images/back.png";
+                    var id2 = 'd-'.concat(r,'-',c);
+                    document.getElementById(id2).src = "images/blank.png";
+                }
+                var id3 = 'l-'.concat(c);
+                document.getElementById(id3).src = "images/lights_off.png";
+            }
+            document.getElementById("u-4-1").src = "images/back_high.png";
+            document.getElementById("mov").onclick = function() { start(); };
+            document.getElementById("mov").value = '开始';
+            document.getElementById("lucky").checked == false;
+        }
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script id="u-1-1" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

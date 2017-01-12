@@ -1,0 +1,18 @@
+img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.longImage {
+    max-width: 100%;
+}
+
+.full {
+    height: 80px;
+    width: 30px;
+}
+
+.part {
+    height: 20px;
+    width: 30px;
+}
